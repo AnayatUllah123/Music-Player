@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music-Player</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/51da5d4c3f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <nav class="nav">
+    <input type="checkbox" id="sidebar-active">
+    <label for="sidebar-active" class="open-sidebar-button">
+      <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+    </label>
+    <label id="overlay" for="sidebar-active"></label>
+    <div class="links-container">
+      <label for="sidebar-active" class="close-sidebar-button">
+        <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+      </label>
+
+  
+      <a class="home-link" href="index.html"><img src="icons8-youtube-music-50.png"></a> 
+      <h1 class="stop">Music-Player</h1>
+      <a href="index.html">About</a> 
+      <a href="index.html">Products</a>
+      <a href="index.html">Blog</a>
+      <a href="index.html">Login</a>
+      
+    </div>
+  </nav>
+
+
+
+  
+    <div class="container">
+       <div class="music-player">
+           <nav class="navi">
+             <div class="circle">
+              <i class="fa-solid fa-angle-left"></i>
+             </div>
+             <div class="circle">
+              <i class="fa-solid fa-bars"></i>
+             </div>
+           </nav>
+           <img src="468-thumbnail.png" class="song-img">
+           <h1>Pehli Dafa</h1>
+           <p>Lorem ipsum dolor</p>
+           <audio  id="song">
+            <source src="Pehli Dafa Song Video  Ileana DCruz  Latest Hindi Song 2017  TSeries.mp3" type="audio/mpeg">
+           </audio>
+           <input id="progress" type="range" value="0">
+
+           <div class="controls">
+               <div>
+                <i class="fa-solid fa-backward"></i>
+               </div>
+               <div onclick="playPause()">
+                <i class="fa-solid fa-play" id="ctrlIcon"></i>
+                </div>
+               <div>
+                <i class="fa-solid fa-forward"></i>
+               </div>
+           </div>
+       </div>
+    </div>
+</body>
+</html>
